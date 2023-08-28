@@ -1,0 +1,43 @@
+# Node.js related
+node_modules/
+dist/
+
+# Environment variables
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# macOS system files
+.DS_Store
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Compiled files
+*.compiled
+
+# Configuration files
+config/database.js
+
+# Build output
+build/
+
+# Temporary files
+*.tmp
+
+# User-specific files
+*.suo
+*.user
+
+# Vercel deployment files
+.vercel
+.vercelignore
+
+# Windows thumbnail cache
+Thumbs.db
