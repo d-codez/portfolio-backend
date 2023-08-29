@@ -9,7 +9,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 app.use(cors({
-    origin: 'https://dhruv-prajapati.netlify.app', // Remove the trailing slash
+    origin: 'https://dhruv-prajapati.netlify.app',
     methods: ['GET', 'POST'],
     credentials: true
 }));
@@ -20,9 +20,6 @@ app.use(bodyParser.json());
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Add this route before your other routes
-app.get('/favicon.ico', (req, res) => res.status(204));
 
 // Set up Handlebars view engine
 app.set('views', path.join(__dirname, 'views'));
@@ -44,7 +41,7 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.get('/', (req, res) => {
-    res.send('Welcome to the backend server!'); // You can change this message
+    res.send('Welcome to the backend server!');
 });
 
 // Define API routes

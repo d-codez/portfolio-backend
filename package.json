@@ -2,9 +2,9 @@
   "name": "portfolio-backend",
   "version": "1.0.0",
   "description": "Backend for Dhruv Prajapati's portfolio website",
-  "main": "src/app.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon index.js"
   },
   "keywords": [
     "portfolio",
