@@ -21,6 +21,8 @@ app.use(bodyParser.json());
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Add this route before your other routes
+app.get('/favicon.ico', (req, res) => res.status(204));
 
 // Set up Handlebars view engine
 app.set('views', path.join(__dirname, 'views'));
